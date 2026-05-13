@@ -6,9 +6,11 @@
   </a>
 </p>
 
-<a align="center" href="https://git.io/typing-svg">
+<div align="center">
+  <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.herokuapp.com?font=JetBrainsMono+Nerd+Font&weight=250&size=18&duration=1800&pause=1000&center=true&vCenter=true&width=600&height=60&lines=These+are+my+dotfiles%2C+configured+on+cachyOS" alt="Typing SVG">
   </a>
+</div>
 
 ## Author
 
