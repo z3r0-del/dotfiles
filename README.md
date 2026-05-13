@@ -2,7 +2,7 @@
 <h1 align="center">Welcome to my Dotfiles 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/dotfiles" target="_blank">
-    <img align="middle" alt="Version" src="https://img.shields.io/npm/v/dotfiles.svg">
+    <center><img alt="Version" src="https://img.shields.io/npm/v/dotfiles.svg"></center>
   </a>
 </p>
 
