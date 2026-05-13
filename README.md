@@ -1,8 +1,8 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<h1 align="center">Welcome to dotfiles 👋</h1>
+<h1 align="center">Welcome to my Dotfiles 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/dotfiles" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/dotfiles.svg">
+    <img align="center" alt="Version" src="https://img.shields.io/npm/v/dotfiles.svg">
   </a>
 </p>
 
