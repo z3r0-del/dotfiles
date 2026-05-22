@@ -16,9 +16,7 @@
   <summary><b>Desktop</b></summary>
   <br>
 
-  <!-- TODO: Add screenshot. -->
-
-  <p>add screenshot</p>
+  <img src="./satty-.png" />
 
 </details>
 
