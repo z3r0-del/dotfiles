@@ -1,21 +1,39 @@
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<h1 align="center">Welcome to my Dotfiles 👋</h1>
-
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrainsMono+Nerd+Font&weight=250&size=18&duration=1800&pause=1000&center=true&vCenter=true&width=600&height=60&lines=These+are+my+dotfiles%2C+configured+on+cachyOS" alt="Typing SVG">
-  </a>
+  # Dotfiles
+<p>
+  <img src="https://img.shields.io/badge/CachyOS-141414?style=for-the-badge&logo=arch-linux&logoColor=1dc7b5" alt="cachyOS" />
+  <img src="https://img.shields.io/badge/Hyprland-141414?style=for-the-badge&logo=wayland&logoColor=1dc7b5" alt="Hyprland" />
+  <img src="https://img.shields.io/badge/Waybar-141414?style=for-the-badge&logo=gnu-bash&logoColor=1dc7b5" alt="Waybar" />
+  <img src="https://img.shields.io/badge/Zsh-141414?style=for-the-badge&logo=zsh&logoColor=1dc7b5" alt="Zsh" />
+</p>
 </div>
 
-## Author
+---
 
-👤 **z3r0**
+## Overview
 
-* Github: [@robinv1205](https://github.com/robinv1205)
+<details open>
+  <summary><b>Desktop</b></summary>
+  <br>
 
-## Show your support
+  <!-- TODO: Add screenshot. -->
 
-Give a ⭐️ if you like this project!
+  <img src="" alt"add screenshot" />
+</details>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+## Stack
 
+| Component | Description |
+| --- | --- |
+| cachyOS | Linux Distro |
+| Hyprland | Dynamic tiling Window Manager |
+| Waybar | Custom status bar |
+| SwayNC | Notifications |
+| Rofi | App Launcher |
+| Kitty | Terminal |
+| Yazi | File Manager |
+| Nvim | Custom lua config |
+
+## Support
+
+If you like this setup, feel free to star the repo :)
