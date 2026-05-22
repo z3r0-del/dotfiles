@@ -1,5 +1,5 @@
 <div align="center">
-  # Dotfiles
+   <h1>Dotfiles</h1>
 <p>
   <img src="https://img.shields.io/badge/CachyOS-141414?style=for-the-badge&logo=arch-linux&logoColor=1dc7b5" alt="cachyOS" />
   <img src="https://img.shields.io/badge/Hyprland-141414?style=for-the-badge&logo=wayland&logoColor=1dc7b5" alt="Hyprland" />
@@ -18,7 +18,8 @@
 
   <!-- TODO: Add screenshot. -->
 
-  <img src="" alt"add screenshot" />
+  <p>add screenshot</p>
+
 </details>
 
 ## Stack
