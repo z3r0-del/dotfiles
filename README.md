@@ -16,7 +16,7 @@
   <summary><b>Desktop</b></summary>
   <br>
 
-  <img src="./satty-.png" />
+  <img src="./images/satty-.png" />
 
 </details>
 
