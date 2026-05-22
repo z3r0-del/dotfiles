@@ -11,15 +11,15 @@
 @define-color white #ffffff; 
 
 * {
-    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-family: "Hack Nerd Font", monospace;
     font-size: 16px;
     font-weight: bold;
     border-radius: 0px 0px 5px 5px;
 }
 
-window#waybar {
+#window#waybar {
     background-color: @bg;
-    color: @fg;
+    color: #a9b1d6;
 }
 
 #workspaces button {
@@ -50,12 +50,14 @@ button:hover {
 }
 
 #clock,
+#clock.date,    
 #custom-notification,
 #pulseaudio,
+#language,
 #custom-sep,
 #tray {
-    padding: 0 8px;
-    color: @white;
+      padding: 0 2px;
+      color: @white;
 }
 
 #custom-sep {
@@ -67,15 +69,21 @@ button:hover {
     border-bottom: 4px solid @cyn;
 }
 
-#tray {
-    background-color: #2980b9;
+#clock.date {
+    color: @cyn;
+    border-bottom: 4px solid @cyn;
 }
+
 #pulseaudio {
     color: @grn;
     border-bottom: 4px solid @grn;
 }
 
 #custom-notification {
-padding-right: 10px;
-padding-left: 5px;
+padding-right: 5px;
+}
+
+#language {
+    font-size: 16px;
+    padding: 0 6px;
 }

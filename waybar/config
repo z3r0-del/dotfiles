@@ -1,97 +1,142 @@
-// -*- mode: jsonc -*-
-{
-    "layer": "top", 
-    "position": "top", 
-    "height": 30, 
-    "spacing": 4, 
+//true/ -*- mode: jsonc -*-
+[
+  {
+    "layer": "top",
+    "output": "DP-1",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
 
-    // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "custom/sep",
-        "wlr/taskbar",
-        "hyprland/window",
+      "custom/sep",
+      "hyprland/workspaces",
+      "custom/sep",
+      "wlr/taskbar",
+      "hyprland/window"
     ],
-    "modules-center": [
-        "clock",
-    ],
-
+    "modules-center": ["clock"],
     "modules-right": [
-        "custom/sep",
-        "pulseaudio",
-        "custom/sep",
-        "cpu",
-        "custom/sep",
-        "memory",
-        "custom/sep",
-        "tray",
-        "custom/notification"
+      "custom/sep",
+      "hyprland/language",
+      "custom/sep",
+      "pulseaudio",
+      "custom/sep",
+      "cpu",
+      "custom/sep",
+      "memory",
+      "custom/sep",
+      "tray",
+      "custom/sep",
+      "custom/notification",
+      "custom/sep",
     ],
 
-    // Modules configuration
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": false,
-        "warp-on-scroll": false,
-        "format": "{name}",
-    },
-    "hyprland/window" : {
-        "max-length": 40,
-        "seperate-outputs": false
-    },
-    "tray": {
-        "spacing": 10
-    },
     "clock": {
-        "format": "{:%I %M %p}",
-        "format-alt": "{:%Y-%m-%d}"
+      "format": "{:%I %M %p}",
+      "tooltip": false,
     },
+
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": false,
+      "warp-on-scroll": false,
+      "format": "{name}"
+    },
+    "hyprland/window": {
+      "max-length": 40,
+      "separate-outputs": true
+    },
+    "tray": { "spacing": 5 },
     "custom/sep": {
-        "format" : "|",
-        "interval" : 0
+      "format": "|",
+      "interval": 0
+    },
+    "hyprland/language": {
+      "format": "{}",
+      "format-en": "🇺🇸",
+      "format-de": "🇩🇪",
+      "keyboard-name": "keychron-keychron-k8-pro-keyboard"
     },
     "pulseaudio": {
-        "scroll-step": 1,
-        "format": "{volume}% {icon}",
-        "format-icons": {
-            "headphone": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
+      "scroll-step": 1,
+      "format": "{volume}% {icon}",
+      "format-icons": {
+        "headphone": "",
+        "default": ["", "", ""]
+      },
+      "on-click": "pavucontrol"
     },
     "wlr/taskbar": {
-        // "format": "{icon}",
-        "icon-size": 16,
-        "icon-theme": "Papirus",
-        "spacing": 4,
-        "on-click": "activate",
-        "on-click-middle": "close"
+      "icon-size": 16,
+      "icon-theme": "Papirus",
+      "spacing": 4,
+      "on-click": "activate",
+      "on-click-middle": "close"
     },
     "cpu": {
-        "format": ": {usage}%",
-        "tooltip": false
+      "format": ": {usage}%",
+      "on-click": "kitty -e btop"
     },
     "memory": {
-        "format": ": {used}GiB"
+      "format": ": {used} GiB",
+      "on-click": "kitty -e btop"
     },
-     "custom/notification": {
-    "tooltip": true,
-    "format": "<span size='16pt'>{icon}</span>",
-    "format-icons": {
-      "notification": "󱅫",
-      "none": "󰂜",
-      "dnd-notification": "󰂠",
-      "dnd-none": "󰪓",
-      "inhibited-notification": "󰂛",
-      "inhibited-none": "󰪑",
-      "dnd-inhibited-notification": "󰂛",
-      "dnd-inhibited-none": "󰪑"
-    },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click": "swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true
+    "custom/notification": {
+      "tooltip": true,
+      "format": "<span size='16pt'>{icon}</span>",
+      "format-icons": {
+        "notification": "󱅫",
+        "none": "󰂜",
+        "dnd-notification": "󰂠",
+        "dnd-none": "󰪓",
+        "inhibited-notification": "󰂛",
+        "inhibited-none": "󰪑",
+        "dnd-inhibited-notification": "󰂛",
+        "dnd-inhibited-none": "󰪑"
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "escape": true
+    }
   },
-},
+  {
+    "layer": "top",
+    "output": "DP-2",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+
+    "modules-left": [
+      "custom/sep", 
+      "hyprland/workspaces", 
+      "custom/sep"
+    ],
+
+    "modules-center": [
+      "clock#date",
+    ],
+
+    "modules-right": [],
+
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": false,
+      "warp-on-scroll": false,
+      "format": "{name}"
+    },
+
+    "clock#date": {
+      "format": "{:%A, %d. %B %Y}",
+      "tooltip-format": "<tt>{calendar}</tt>"
+    },
+
+    "custom/sep": {
+      "format": "|",
+      "interval": 0
+    },
+
+  }
+]
