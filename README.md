@@ -21,7 +21,9 @@
 </details>
 
 <details closed>
-## Stack
+
+<div align="center">
+<h1>Stack</h1>
 
 | Component | Description |
 | --- | --- |
@@ -34,6 +36,7 @@
 | Yazi | File Manager |
 | Nvim | Custom lua config |
 </details>
+</div>
 
 ---
 
