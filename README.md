@@ -20,6 +20,7 @@
 
 </details>
 
+<details closed>
 ## Stack
 
 | Component | Description |
@@ -32,6 +33,9 @@
 | Kitty | Terminal |
 | Yazi | File Manager |
 | Nvim | Custom lua config |
+</details>
+
+---
 
 ## Support
 
