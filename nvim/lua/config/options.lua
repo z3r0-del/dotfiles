@@ -1,11 +1,7 @@
--- Options are automatically loaded before lazy.nvim startup
--- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
--- Add any additional options here
-
 -- Options
 local set = vim.opt
 
--- Line numbers
+-- Line Numbers
 set.number = true
 set.relativenumber = true
 
@@ -15,29 +11,37 @@ set.shiftwidth = 4
 set.expandtab = true
 set.autoindent = true
 
--- Search settings
+-- Search Settings
 set.ignorecase = true
 set.smartcase = true
 
--- Kein Swapfile
+-- Swapfile
 set.swapfile = false
-
--- Appearance
-set.termguicolors = true
-set.background = "dark"
-set.signcolumn = "yes"
 
 -- Cursor Line
 set.cursorline = true
 
--- clipboard
-set.clipboard:append("unnamedplus")
-
--- backspace
+-- Backspace
 set.backspace = "indent,eol,start"
 
--- incremental Search
+-- Incremental Search
 set.incsearch = true
+set.hlsearch = false
 
--- faster cursor hold
+-- Faster Cursor Hold
 set.updatetime = 50
+
+-- Everything else
+set.colorcolumn = "80"
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    set.wrap = true
+    set.linebreak = true
+    set.showbreak = "↪ "
+    set.textwidth = 0
+  end,
+})
+
+-- Emmet
+vim.g.user_emmet_leader_key = ","
