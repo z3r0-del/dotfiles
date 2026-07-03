@@ -20,6 +20,16 @@
 
 </details>
 
+### Fastfetch
+
+<details open>
+  <summary><b>Desktop</b></summary>
+  <br>
+
+  <img src="./images/satty-1.png" />
+
+</details>
+
 <details closed>
 
 <div align="center">
@@ -35,6 +45,7 @@
 | Kitty | Terminal |
 | Yazi | File Manager |
 | Nvim | Custom lua config |
+
 </details>
 </div>
 
