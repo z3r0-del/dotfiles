@@ -34,7 +34,7 @@ window {
     transparency: "screenshot";
     border-color: @transparent;   
     border: 0px;
-    border-radius: 6px;
+    border-radius: 8px;
     spacing: 0;
     children: [ mainbox ];
 }

@@ -26,4 +26,10 @@ configuration{
     kb-move-char-forward: "Control+f";
     kb-mode-complete: "Control+o";
 }
-@theme "theme.rasi"
+//@theme "theme.rasi"
+
+//@theme "/home/z3r0/.local/share/rofi/themes/spotlight-dark.rasi"
+
+//@theme "/home/z3r0/.local/share/rofi/themes/rounded-blue-dark.rasi"
+
+@theme "/home/z3r0/.local/share/rofi/themes/rounded-blue-dark.rasi"

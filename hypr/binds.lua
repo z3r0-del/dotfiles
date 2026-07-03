@@ -5,8 +5,8 @@
 -- Set programs
 local terminal = "kitty"
 local fileManager = "dolphin"
-local menu = "rofi -show run"
-local browser = "brave"
+local menu = "rofi -show drun -show-icons"
+local browser = "firefox"
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
@@ -33,6 +33,7 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("obsidian"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("localsend"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprctl switchxkblayout all next"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))

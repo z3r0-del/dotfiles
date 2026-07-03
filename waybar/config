@@ -4,9 +4,8 @@
     "layer": "top",
     "output": "DP-1",
     "position": "top",
-    "height": 30,
+    "height": 35,
     "spacing": 4,
-
     "modules-left": [
       "custom/sep",
       "hyprland/workspaces",
@@ -14,7 +13,9 @@
       "wlr/taskbar",
       "hyprland/window"
     ],
-    "modules-center": ["clock"],
+    "modules-center": [
+      "clock"
+    ],
     "modules-right": [
       "custom/sep",
       "hyprland/language",
@@ -26,16 +27,25 @@
       "memory",
       "custom/sep",
       "tray",
+      "bluetooth",
       "custom/sep",
       "custom/notification",
-      "custom/sep",
+      "custom/sep"
     ],
-
     "clock": {
-      "format": "{:%I %M %p}",
-      "tooltip": false,
+      "tooltip": true,
+      "format": "{:%I %M %p}"
     },
-
+    "bluetooth": {
+      "format": " {status}",
+      "format-connected": "",
+      "format-connected-battery": "{device_alias} {device_battery_percentage}%",
+      "tooltip-format": " {device_alias} connected",
+      "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+      "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+      "on-click": "blueman-manager"
+    },
     "hyprland/workspaces": {
       "disable-scroll": true,
       "all-outputs": false,
@@ -43,10 +53,13 @@
       "format": "{name}"
     },
     "hyprland/window": {
-      "max-length": 40,
+      "max-length": 20,
       "separate-outputs": true
     },
-    "tray": { "spacing": 5 },
+    "tray": {
+      "spacing": 5,
+      "show-passive-items": true
+    },
     "custom/sep": {
       "format": "|",
       "interval": 0
@@ -62,7 +75,11 @@
       "format": "{volume}% {icon}",
       "format-icons": {
         "headphone": "",
-        "default": ["", "", ""]
+        "default": [
+          "",
+          "",
+          ""
+        ]
       },
       "on-click": "pavucontrol"
     },
@@ -82,7 +99,6 @@
       "on-click": "kitty -e btop"
     },
     "custom/notification": {
-      "tooltip": true,
       "format": "<span size='16pt'>{icon}</span>",
       "format-icons": {
         "notification": "󱅫",
@@ -106,37 +122,48 @@
     "layer": "top",
     "output": "DP-2",
     "position": "top",
-    "height": 30,
+    "height": 35,
     "spacing": 4,
-
     "modules-left": [
-      "custom/sep", 
-      "hyprland/workspaces", 
+      "custom/sep",
+      "hyprland/workspaces",
       "custom/sep"
     ],
-
     "modules-center": [
-      "clock#date",
+      "clock#date"
     ],
-
     "modules-right": [],
-
     "hyprland/workspaces": {
       "disable-scroll": true,
       "all-outputs": false,
-      "warp-on-scroll": false,
-      "format": "{name}"
+      "warp-on-scroll": false
     },
-
     "clock#date": {
+      "tooltip": true,
       "format": "{:%A, %d. %B %Y}",
-      "tooltip-format": "<tt>{calendar}</tt>"
+      "tooltip-format": "<tt><small>{calendar}</small></tt>",
+      "calendar": {
+        "mode": "year",
+        "mode-mon-col": 3,
+        "weeks-pos": "right",
+        "on-scroll": 1,
+        "format": {
+          "months": "<span color='#ad8ee6'><b>{}</b></span>",
+          "days": "<span color='#a9b1d6'><b>{}</b></span>",
+          "weeks": "<span color='#ffffff'><b>{}</b></span>",
+          "weekdays": "<span color='#0db9d7'><b>{}</b></span>",
+          "today": "<span color='#9ece6a'><b>{}</b></span>"
+        }
+      },
+      "actions": {
+        "on-click-right": "mode",
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down"
+      }
     },
-
     "custom/sep": {
       "format": "|",
       "interval": 0
-    },
-
+    }
   }
 ]
