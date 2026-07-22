@@ -20,10 +20,10 @@
 
 </details>
 
-### Fastfetch
+### Terminal
 
 <details open>
-  <summary><b>Desktop</b></summary>
+  <summary><b>Fastfetch</b></summary>
   <br>
 
   <img src="./images/satty-_1.png" />
