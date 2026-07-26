@@ -31,7 +31,7 @@
 </details>
 
 <details closed>
-
+<summary>Stack Overview</summary>
 <div align="center">
 <h1>Stack</h1>
 
