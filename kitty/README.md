@@ -7,7 +7,7 @@
 <h2>Overview</h2>
 
 <details open>
-  <img src="./kitty.png"/>
+  <img src="./imgs/kitty.png"/>
 </details>
 
 ---
