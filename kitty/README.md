@@ -7,7 +7,7 @@
 <h2>Overview</h2>
 
 <details open>
-  <img src="./imgs/kitty.png"/>
+  <img src="./imgs/kitty.png" height="100%" width="80%"/>
 </details>
 
 ---
