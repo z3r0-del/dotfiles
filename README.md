@@ -10,7 +10,7 @@
 
 ---
 
-<h1>Overview</h1>
+<h2 align="center">Overview</h2>
 
 <details open>
   <summary><b>Desktop</b></summary>
@@ -20,7 +20,7 @@
 
 </details>
 
- <h1>Terminal</h1>
+ <h2 align="center">Terminal</h2>
 
 <details open>
   <summary><b>Fastfetch</b></summary>
@@ -33,7 +33,8 @@
 <details closed>
 <summary>Stack Overview</summary>
 <div align="center">
-<h1>Stack</h1>
+
+<h2>Stack</h2>
 
 | Component | Description |
 | --- | --- |
@@ -51,6 +52,6 @@
 
 ---
 
-<h1>Support</h1>
+<h2 align="center">Support</h2>
 
 If you like this setup, feel free to star the repo :)
