@@ -10,7 +10,7 @@
 
 ---
 
-## Overview
+<h1>Overview</h1>
 
 <details open>
   <summary><b>Desktop</b></summary>
@@ -20,7 +20,7 @@
 
 </details>
 
-### Terminal
+ <h1>Terminal</h1>
 
 <details open>
   <summary><b>Fastfetch</b></summary>
@@ -46,11 +46,11 @@
 | Yazi | File Manager |
 | Nvim | Custom lua config |
 
-</details>
 </div>
+</details>
 
 ---
 
-## Support
+<h1>Support</h1>
 
 If you like this setup, feel free to star the repo :)
